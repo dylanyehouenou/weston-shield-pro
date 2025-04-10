@@ -1,13 +1,20 @@
-function emailSender() {
-    Email.send({
-        Host : "s1.maildns.net",
-        Username : "weston.shield.pro@gmail.com",
-        Password : "A6BB34372D14D4472899C4ED2C94373C2704",
-        To : 'dylanyehouenou344@gmail.com',
-        From : "weston.shield.pro@gmail.com",
-        Subject : "This is the subject",
-        Body : "And this is the body"
-    }).then(
-      message => alert(message)
-    );
+<script>
+function handleFormSubmit(event) {
+  event.preventDefault();
+  const form = event.target;
+
+  // Simulate form submission
+  fetch(form.action, {
+    method: form.method,
+    body: new FormData(form),
+  })
+    .then(() => {
+      // Redirect to the main page and scroll to a specific section
+      window.location.href = "index.html#specific-section";
+      alert("Votre message a été envoyé avec succès !");
+    })
+    .catch(() => {
+      alert("Une erreur s'est produite. Veuillez réessayer.");
+    });
 }
+</script>

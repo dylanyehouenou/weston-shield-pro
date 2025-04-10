@@ -392,16 +392,16 @@ Grâce à une formation poussée en tactiques militaires et sécurité, je suis 
       <div class="">
         <div class="row">
           <div class="col-md-7 mx-auto">
-            <form  action="https://formsubmit.co/weston.shield.pro@gmail.com" method="POST">
+            <form action="https://formsubmit.co/weston.shield.pro@gmail.com" method="POST" onsubmit="handleFormSubmit(event)">
               <div class="contact_form-container">
                 <div>
                   <input type="hidden" name="_captcha" value="false">
-                      <input type="hidden" name="_subject" value="Nouveau message depuis le formulaire de contact !">
-                      <input type="hidden" name="_template" value="table">
+                  <input type="hidden" name="_subject" value="Nouveau message depuis le formulaire de contact !">
+                  <input type="hidden" name="_template" value="table">
                   <div>
                     <input type="text" placeholder="Votre nom" id="name" name="name" required />
                   </div>
-                  <div>  
+                  <div>
                     <input type="text" placeholder="Objet du message" id="subject" name="subject" required />
                   </div>
                   <div>
@@ -410,15 +410,13 @@ Grâce à une formation poussée en tactiques militaires et sécurité, je suis 
                   <div>
                     <input type="tel" id="telephone" name="telephone" placeholder="Votre numéro de téléphone" required />
                   </div>
-                  <div> 
+                  <div>
                     <input type="text" id="dates" name="dates" placeholder="Dates : JJ/MM/AAAA 00h00 - 00h00" class="message_input" required />
                   </div>
-                  <div class="btn-box ">
+                  <div class="btn-box">
                     <button type="submit">
                       Envoyer
                     </button>
-
-                    
                   </div>
                 </div>
               </div>
@@ -428,6 +426,8 @@ Grâce à une formation poussée en tactiques militaires et sécurité, je suis 
       </div>
     </div>
   </section>
+
+
 
   <!-- end contact section -->
 
