@@ -1,4 +1,3 @@
-<script>
 function handleFormSubmit(event) {
   event.preventDefault();
   const form = event.target;
@@ -17,4 +16,3 @@ function handleFormSubmit(event) {
       alert("Une erreur s'est produite. Veuillez réessayer.");
     });
 }
-</script>
