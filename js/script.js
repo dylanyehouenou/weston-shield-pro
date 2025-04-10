@@ -10,7 +10,7 @@ function handleFormSubmit(event) {
   })
     .then(() => {
       // Redirect to the main page and scroll to a specific section
-      window.location.href = "index.html#specific-section";
+      window.location.href = "index.html#contact";
       alert("Votre message a été envoyé avec succès !");
     })
     .catch(() => {
