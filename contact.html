@@ -106,30 +106,36 @@
     <div class="container">
       <div class="heading_container heading_center">
         <h2>
-          Get In touch
+          Prendre rendez-vous
         </h2>
       </div>
       <div class="">
         <div class="row">
           <div class="col-md-7 mx-auto">
-            <form action="#">
+            <form action="https://formsubmit.co/weston.shield.pro@gmail.com" method="POST" onsubmit="handleFormSubmit(event)">
               <div class="contact_form-container">
                 <div>
+                  <input type="hidden" name="_captcha" value="false">
+                  <input type="hidden" name="_subject" value="Nouveau message depuis le formulaire de contact !">
+                  <input type="hidden" name="_template" value="table">
                   <div>
-                    <input type="text" placeholder="Full Name" />
+                    <input type="text" placeholder="Votre nom" id="name" name="name" required />
                   </div>
                   <div>
-                    <input type="email" placeholder="Email " />
+                    <input type="text" placeholder="Objet du message" id="subject" name="subject" required />
                   </div>
                   <div>
-                    <input type="text" placeholder="Phone Number" />
+                    <input type="email" id="email" name="email" placeholder="Votre email" required />
                   </div>
-                  <div class="">
-                    <input type="text" placeholder="Message" class="message_input" />
+                  <div>
+                    <input type="tel" id="telephone" name="telephone" placeholder="Votre numéro de téléphone" required />
                   </div>
-                  <div class="btn-box ">
+                  <div>
+                    <input type="text" id="dates" name="dates" placeholder="Dates : JJ/MM/AAAA 00h00 - 00h00" class="message_input" required />
+                  </div>
+                  <div class="btn-box">
                     <button type="submit">
-                      Send
+                      Envoyer
                     </button>
                   </div>
                 </div>
@@ -141,124 +147,125 @@
     </div>
   </section>
 
-  <!-- end contact section -->
 
-  <!-- info section -->
-  <section class="info_section ">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-3">
-          <div class="info_logo">
-            <a class="navbar-brand" href="index.html">
-              <span>
-                Guarder
-              </span>
-            </a>
-            <p>
-              dolor sit amet, consectetur magna aliqua. Ut enim ad minim veniam, quisdotempor incididunt r
-            </p>
-          </div>
+
+  <!-- end contact section -->
+ <!-- info section -->
+ <section class="info_section ">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3">
+        <div class="info_logo">
+          <a class="navbar-brand" href="index.html">
+            <span>
+              Weston Shield
+            </span>
+          </a>
+          <p>
+            Weston Shield protège les personnes, les biens et les événements avec discrétion, efficacité et confiance.
+             Notre priorité : votre sécurité, en toutes circonstances.
+          </p>
         </div>
-        <div class="col-md-3">
-          <div class="info_links">
-            <h5>
-              Useful Link
-            </h5>
-            <ul>
-              <li>
-                <a href="">
-                  dolor sit amet, consectetur
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  magna aliqua. Ut enim ad
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  minim veniam,
-                </a>
-              </li>
-              <li>
-                <a href="">
-                  quisdotempor incididunt r
-                </a>
-              </li>
-            </ul>
-          </div>
+      </div>
+      <div class="col-md-3">
+        <div class="info_links">
+          <h5>
+            Lien utiles
+          </h5>
+          <ul>
+            <li>
+              <a href="">
+                Weston Shield
+              </a>
+            </li>
+            <li>
+              <a href="https://dydydebondy.github.io/Dylan-YEHOUENOU-Portfolio/">
+                Besoin de crée un site ?
+              </a>
+            </li>
+            <li>
+              <a href="">
+                
+              </a>
+            </li>
+            <li>
+              <a href="">
+                
+              </a>
+            </li>
+          </ul>
         </div>
-        <div class="col-md-3">
-          <div class="info_info">
-            <h5>
-              Contact Us
-            </h5>
-          </div>
-          <div class="info_contact">
-            <a href="" class="">
-              <i class="fa fa-map-marker" aria-hidden="true"></i>
-              <span>
-                Lorem ipsum dolor sit amet,
-              </span>
-            </a>
-            <a href="" class="">
-              <i class="fa fa-phone" aria-hidden="true"></i>
-              <span>
-                Call : +01 1234567890
-              </span>
-            </a>
-            <a href="" class="">
-              <i class="fa fa-envelope" aria-hidden="true"></i>
-              <span>
-                demo@gmail.com
-              </span>
-            </a>
-          </div>
+      </div>
+      <div class="col-md-3">
+        <div class="info_info">
+          <h5>
+            Contact Us
+          </h5>
         </div>
-        <div class="col-md-3">
-          <div class="info_form ">
-            <h5>
-              Newsletter
-            </h5>
-            <form action="#">
-              <input type="email" placeholder="Enter your email">
-              <button>
-                Subscribe
-              </button>
-            </form>
-            <div class="social_box">
-              <a href="">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
+        <div class="info_contact">
+          <a href="" class="">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>
+            <span>
+              Lyon,Nimes,Paris
+            </span>
+          </a>
+          <a href="" class="">
+            <i class="fa fa-phone" aria-hidden="true"></i>
+            <span>
+              +33 6 46 21 71 41
+            </span>
+          </a>
+          <a href="" class="">
+            <i class="fa fa-envelope" aria-hidden="true"></i>
+            <span>
+              weston.shield.pro@gmail.com
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="info_form ">
+          <h5>
+            Newsletter
+          </h5>
+          <form action="#">
+            <input type="email" placeholder="Entrer votre email">
+            <button>
+              S'inscrire
+            </button>
+          </form>
+          <div class="social_box">
+            <a href="">
+              <!--<i class="fa fa-facebook" aria-hidden="true"></i>-->
+            </a>
+              <a href="https://www.tiktok.com/@weston24369?_t=ZN-8tOqXoqxeje&_r=1">
+              <i class="fa fa-tiktok" aria-hidden="true"></i>
               </a>
-              <a href="">
-                <i class="fa fa-twitter" aria-hidden="true"></i>
+              <a href="https://www.tiktok.com/@weston24369?_t=ZN-8tOqXoqxeje&_r=1">
+                <img src="images/tik-tok-png.png" style="width: 24px; height: 30px;">
               </a>
-              <a href="">
-                <i class="fa fa-youtube" aria-hidden="true"></i>
-              </a>
-              <a href="">
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-              </a>
-            </div>
+            </a>
+            <a href="https://www.instagram.com/weston__243/">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+             
+            </a>
           </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
-  <!-- end info_section -->
+<!-- end info_section -->
 
-
-
-
-  <!-- footer section -->
-  <footer class="container-fluid footer_section">
-    <p>
-      &copy; <span id="currentYear"></span> All Rights Reserved. Design by
-      <a href="https://html.design/">Free Html Templates</a>
-    </p>
-  </footer>
-  <!-- footer section -->
+<!-- footer section -->
+<footer class="container-fluid footer_section">
+  <p>
+    &copy; <span id="currentYear"></span> All Rights Reserved. Design by
+    <a href="https://dydydebondy.github.io/Dylan-YEHOUENOU-Portfolio/">Dydydebondy</a>
+  </p>
+</footer>
+<!-- footer section -->
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/bootstrap.js"></script>
