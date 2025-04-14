@@ -793,6 +793,13 @@ a:focus {
   color: #f1db25;
 }
 
+.team_section .heading_container.heading_center h2 {
+  color: #fffcfc;
+}
+.team_section .heading_container.heading_center p {
+  color: #ffffff;
+}
+
 .info_section {
   background-color: #101010;
   color: #ffffff;
