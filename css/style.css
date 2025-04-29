@@ -1,8 +1,14 @@
 @import url("font-awesome.min.css");
+
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Poppins", sans-serif;
   color: #0c0c0c;
   background-color: #ffffff;
+  overflow-x: hidden;
 }
 
 .layout_padding {
@@ -84,7 +90,9 @@ body {
           flex-direction: column;
   position: relative;
 }
-
+.sub_page .hero_area {
+  min-height: auto;
+}
 .hero_bg_box {
   position: absolute;
   top: 0;
@@ -100,14 +108,25 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
+.hero_bg_box::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}
 
 .hero_bg_box .img-box {
   width: 100%;
+  height: 100%;
 }
 
 .hero_bg_box .img-box img {
   min-width: 100%;
   min-height: 100%;
+  object-fit: cover;
 }
 
 .hero_bg_box::before {
@@ -134,7 +153,13 @@ body {
 }
 
 .header_section {
-  padding: 0;
+  position: relative;
+  z-index: 10;
+}
+
+.header_top {
+  padding: 10px 0;
+  background-color: rgba(0, 0, 0, 0.7);
 }
 
 .header_section .container-fluid {
@@ -525,6 +550,7 @@ a:focus {
 
 .client_section {
   text-align: center;
+  padding: 90px 0;
 }
 
 .client_section #carouselExampleControls {
@@ -543,14 +569,31 @@ a:focus {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 15px;
+  border-radius: 15px;
+  padding: 35px 25px;
+  box-shadow: var(--box-shadow);
+  background-color: var(--light-bg);
 }
 
 .client_section .box .img-box {
-  width: 145px;
+  width: 120px;
+  height: 120px;
+  min-width: 120px;
+  border-radius: 100%;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 3px solid var(--secondary-color);
 }
 
 .client_section .box .img-box img {
   width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .client_section .box .detail-box {
@@ -568,10 +611,10 @@ a:focus {
 }
 
 .client_section .box .detail-box h4 {
-  font-weight: bold;
-  font-size: 18px;
-  padding: 0 10px;
-  border-bottom: 1px solid #ffffff;
+  font-weight: 600;
+  font-size: 22px;
+  color: var(--primary-color);
+  margin-bottom: 10px;
 }
 
 .client_section .box .detail-box p {
@@ -736,6 +779,13 @@ a:focus {
 }
 
 /* end contact section */
+/* team section */
+.team_section {
+  position: relative;
+  color: #ffffff;
+}
+
+
 .team_section .box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -764,7 +814,7 @@ a:focus {
   padding: 25px 15px;
   text-align: center;
   bottom: 0;
-  background-color: rgba(28, 28, 28, 0.75);
+  background-color: rgba(73, 73, 73, 0.75);
 }
 
 .team_section .btn-box {
@@ -793,11 +843,16 @@ a:focus {
   color: #f1db25;
 }
 
-.team_section .heading_container.heading_center h2 {
-  color: #fffcfc;
+.team_section .heading_container.heading_center h8 {
+  color: #000000;
+  font-weight: 600;
+  font-size: 22px;
 }
-.team_section .heading_container.heading_center p {
-  color: #ffffff;
+.team_section .heading_container.heading_center p2 {
+  color: #000000;
+  font-style: italic;
+  margin-bottom: 0;
+  font-size: 15px;
 }
 
 .info_section {
