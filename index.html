@@ -393,26 +393,26 @@ Grâce à une formation poussée en tactiques militaires et sécurité, je suis 
       <div class="">
         <div class="row">
           <div class="col-md-7 mx-auto">
-            <form action="https://formsubmit.co/weston.shield.pro@gmail.com" method="POST" onsubmit="handleFormSubmit(event)">
+            <form action="https://formsubmit.co/weston.shield.pro@gmail.com" method="POST">
               <div class="contact_form-container">
                 <div>
                   <input type="hidden" name="_captcha" value="false">
                   <input type="hidden" name="_subject" value="Nouveau message depuis le formulaire de contact !">
                   <input type="hidden" name="_template" value="table">
                   <div>
-                    <input type="text" placeholder="Votre nom" id="name" name="name" required />
+                    <input type="text" placeholder="Votre nom" name="name" required />
                   </div>
                   <div>
-                    <input type="text" placeholder="Objet du message" id="subject" name="subject" required />
+                    <input type="hidden" placeholder="Objet du message"  name="_subject" required />
                   </div>
                   <div>
-                    <input type="email" id="email" name="email" placeholder="Votre email" required />
+                    <input type="email"  name="email" placeholder="Votre email" required />
                   </div>
                   <div>
-                    <input type="tel" id="telephone" name="telephone" placeholder="Votre numéro de téléphone" required />
+                    <input type="telephone"  name="telephone" placeholder="Votre numéro de téléphone" required />
                   </div>
                   <div>
-                    <input type="text" id="dates" name="dates" placeholder="Dates : JJ/MM/AAAA 00h00 - 00h00" class="message_input" required />
+                    <input type="text"  name="date" placeholder="Dates : JJ/MM/AAAA 00h00 - 00h00" class="message_input" required />
                   </div>
                   <div class="btn-box">
                     <button type="submit">
